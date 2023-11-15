@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto+Slab&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --heading-size: 24px;
+  --bg-black: "#303030";
+  --effect-red-color: linear-gradient(
+    95.69deg,
+    #ac0000 0,
+    #f00 26.35%,
+    #ff3b3b 50.83%,
+    #f00 72.71%,
+    #f00 100%
+  );
+}
+
+/* Original CSS */
+
+.btn-bg {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 6px 16px;
+  border-radius: 10px;
+  background: var(--effect-red-color);
+  color: white;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* 28px for pc 16px for para */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}

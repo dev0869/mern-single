@@ -1,0 +1,18 @@
+
+.para p{
+    font-size: 14px;
+}
+.para h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.headerp{
+    font-size: 14px;
+    line-height: 31px;
+}
+.para{
+    padding: 20px;
+}
+.paracontent p{
+    padding: 12px;
+}

@@ -1,0 +1,94 @@
+.filterbut {
+  color: orangered;
+  border: 1px solid orangered;
+  padding: 4px 14px;
+  border-radius: 10px;
+}
+.seedetail {
+  margin-top: 16px;
+  padding: 12px;
+}
+.tttt {
+  border: 1px solid;
+  height: 35px;
+  border-radius: 5px;
+  width: 90px;
+}
+.tttt::placeholder {
+  font-size: 12px;
+  padding: 2px;
+}
+.seedetail h1 {
+  font-size: 16px;
+}
+.divbox {
+  padding: 20px 80px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 3px rgba(150, 190, 238, 0.15);
+}
+.divbox:hover {
+  box-shadow: 0 0 30px 8px rgba(150, 190, 238, 0.25);
+}
+.shadowss {
+  background: #f9fafc !important;
+}
+.sidebar-acc .accordion-button.collapsed{
+  background: #ffffff;
+}
+.sidebar-acc .accordion-button{
+  border: none;
+  background: rgb(187 187 187 / 9%);
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px 1.3rem;
+}
+.sidebar-acc .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.sidebar-acc .collapse {
+  visibility: visible;
+}
+
+/*? ######################----Gallery CSS ----##################### */
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust minmax values as needed */
+  gap: 16px; /* Adjust the gap between items as needed */
+}
+
+.masonry-item {
+  break-inside: avoid; /* Ensure items don't break across columns */
+  margin-bottom: 16px; /* Adjust the margin between items as needed */
+}
+
+.masonry-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* width */
+.adminS::-webkit-scrollbar {
+  width: 0px;
+  transition: 0.3s all;
+}
+.adminS:hover::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 5px;
+}
+
+/* Track */
+.adminS::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.adminS::-webkit-scrollbar-thumb {
+  background: #88888863; 
+}
+
+/* Handle on hover */
+.adminS::-webkit-scrollbar-thumb:hover {
+  background: #5555553d; 
+}

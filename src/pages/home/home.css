@@ -1,0 +1,32 @@
+.help-box {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* overflow: hidden; */
+  /* border: 2px solid; */
+  align-items: center;
+  justify-content: flex-start;
+}
+.help-icon {
+  background: #fff;
+  /* border: 2px solid black; */
+  border: 1px solid #dddcdc;
+  box-shadow: 0 8px 24px #dddcdc;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carousel-indicators{
+  display: none;
+}
+.help-box:hover{
+  color: orangered !important;
+}
+@media screen and (max-width:500px) {
+  .text h1 {
+    font-size: 28px;
+  
+}
+}

@@ -1,0 +1,43 @@
+<Col md="6">
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Label>Enter State</Form.Label>
+                        <Form.Control
+                          as="select"
+                          name="state"
+                          onChange={handleStateChange}
+                          required
+                        >
+                          <option value="">Select state </option>
+                          {States.map((itm, i) => (
+                            <option key={i}>{itm}</option>
+                          ))}
+                        </Form.Control>
+                      </Form.Group>
+                    </Col>
+                    <Col md="6">
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Label>Enter City</Form.Label>
+                        <Form.Control
+                          as="select"
+                          name="city"
+                          onChange={handleDistrictChange}
+                          required
+                        >
+                          <option value="">Select District </option>
+                          {values.state &&
+                            DistrictByState[values.state].map(
+                              (district, index) => (
+                                <option key={index} value={district}>
+                                  {district}
+                                </option>
+                              )
+                            )}
+                        </Form.Control>
+                      </Form.Group>
+                    </Col>
