@@ -64,7 +64,7 @@ const Admin = () => {
           className="btn btn-outline-danger"
           onClick={() => {
             dispatch(logout()).then(unwrapResult).then(()=>{
-            navigate('/login')
+                  window.location.href = "/"
             })
           
           }}

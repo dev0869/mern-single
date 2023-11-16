@@ -97,7 +97,7 @@ const Footer = () => {
             </div>
             <div className="col-12 flex gap-4 mt-4 justify-start">
               {socialLinks.map((itm, i) => (
-                <a key={i} target="blank" className="" href={itm.link}>
+                <a key={i} target="blank" className="" href={itm?.link?.toString()}>
                   {" "}
                   {itm.icon}
                 </a>

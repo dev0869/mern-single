@@ -31,7 +31,7 @@ export const login = createAsyncThunk(
 export const logout = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
   try {
     localStorage.removeItem("user");
-    window.location.reload();
+    // window.location.reload();
   } catch (error) {
     return thunkAPI.rejectWithValue(error);
   }
